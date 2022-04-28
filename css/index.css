@@ -3,11 +3,27 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.titulo-principal {
+.label-principal {
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    text-align: justify;
+
+}
+
+#texto-cript{
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    
 }
 
 .footer {
@@ -15,4 +31,15 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     font-size: 14px;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+.img-advertencia{
+    display: inline;
+}
+
+.muñeco{
+    width: min-content;
 }

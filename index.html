@@ -25,17 +25,30 @@
           </div>
         </header>
 	</head>
-    <body class="texto-cuerpo">
-      <div><h1 class="titulo-principal">Ingrese el texto aquí</h1></div>
-      <div>
-        <form>
-          <textarea>
 
-          </textarea>
+    <body class="texto-cuerpo">
+      <section class="textarea-section">
+        <form>
+          <label for="texto-cript" class="label-principal"><h1>Ingrese el texto aquí</h1></label>
+          <textarea id="texto-cript" name="texto-cript" autocomplete="on" autofocus rows="9" cols="20"></textarea>
+        </form>
+      </section>
+
+      <section class="button-section">
+        <div>
+          <span><img class="img-advertencia" src="/img/Advertencia 2x.png" alt="Signo de advertencia">Sólo letras minúsculas y sin acentos</span>
           <button type="button" class="btn btn-primary">Encriptar</button>
           <button type="button" class="btn btn-secondary">Desencriptar</button>
-        </form>
-      </div>
+        </div>
+      </section>
+
+      <section class="criptresults-section">
+        <div>
+        <img class="muñeco" src="/img/Muñeco Alura 1x.png" alt="Persona observando un diamante con una lupa">
+        <span>Ningún mensaje fue encontrado</span>
+        <span>Ingresa el texto que deseas encriptar o desencriptar.</span>
+        </div>
+      </section>
     </body>
     <hr>
     <footer class="footer"><mark><u>Hecho por WaterCode para Alura, 2022 </u></mark></footer>
