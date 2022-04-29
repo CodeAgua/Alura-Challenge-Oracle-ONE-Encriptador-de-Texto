@@ -23,7 +23,14 @@
     box-shadow: 1px 1px 1px #999;
     font-size: 1.3rem;
     letter-spacing: 1px;
-    
+    text-transform: lowercase;
+}
+
+.criptreemplazo-texto {
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px;
+    text-align: justify;
 }
 
 .footer {
@@ -41,5 +48,5 @@
 }
 
 .munieco{
-    width: min-content;
+    display: inline-block
 }

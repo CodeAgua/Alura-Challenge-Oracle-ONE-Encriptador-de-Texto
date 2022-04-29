@@ -30,23 +30,24 @@
       <section class="textarea-section">
         <form>
           <label for="texto-cript" class="label-principal"><h1>Ingrese el texto aquí</h1></label>
-          <textarea id="texto-cript" name="texto-cript" autocomplete="on" autofocus rows="9" cols="20"></textarea>
+          <textarea type="text" id="texto-cript" name="texto-cript" autocomplete="on" autofocus rows="9" cols="20"></textarea>
         </form>
       </section>
 
       <section class="button-section">
         <div>
           <span><img class="img-advertencia" src="img/Advertencia 2x.png" alt="Signo de advertencia">Sólo letras minúsculas y sin acentos</span>
-          <button type="button" class="btn btn-primary">Encriptar</button>
-          <button type="button" class="btn btn-secondary">Desencriptar</button>
+          <button type="button" id="boton-encriptar" class="btn btn-primary">Encriptar</button>
+          <button type="button" id="boton-desencriptar" class="btn btn-secondary">Desencriptar</button>
         </div>
       </section>
 
       <section class="criptresults-section">
         <div>
         <img class="munieco" src="img/Muñeco Alura 1x.png" alt="Persona observando un diamante con una lupa">
-        <span>Ningún mensaje fue encontrado</span>
-        <span>Ingresa el texto que deseas encriptar o desencriptar.</span>
+        <span class="criptreemplazo-texto">Ningún mensaje fue encontrado
+          
+          Ingresa el texto que deseas encriptar o desencriptar.</span>
         </div>
       </section>
     </body>
