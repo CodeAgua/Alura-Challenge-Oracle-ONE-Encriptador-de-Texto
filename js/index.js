@@ -1,30 +1,29 @@
 var textoEncriptable = document.querySelector("#boton-encriptar");
 
 textoEncriptable.addEventListener('click', function(){
-    var textarea = capturarTextarea(textarea);
+    var textarea1 = document.querySelector("#texto-cript");
+    var texto1 = textarea1.value;
     var resultEncriptado = document.querySelector(".criptreemplazo-texto");
-    resultEncriptado.innerHTML = "";
-    resultEncriptado.innerHTML = textarea.value;
-    console.log(textarea);
+    resultEncriptado.textContent = texto1;
+    console.log(texto1);
 });
 
-function capturarTextarea(textarea) {
-    var textarea = document.querySelector("#texto-cript");
-    var texto = textarea.value;
-    return texto
-}
-
+// function capturarTextarea(textarea) {return texto}
+// document.querySelector('#myspan').textContent = 'newtext';
 // textarea.reset();
+// span = document.getElementById("myspan");
+// txt = document.createTextNode("your cool text");
+// span.appendChild(txt);
 
 var textoDesencriptable = document.querySelector("#boton-desencriptar");
 
 textoDesencriptable = addEventListener('click', function(){
 
-    var textarea = capturarTextarea(textarea);
+    var textarea2 = document.querySelector("#texto-cript");
+    var texto2 = textarea2.value;
     var resultDesencriptado = document.querySelector(".criptreemplazo-texto");
-    resultDesencriptado.innerHTML = "";
-    resultDesencriptado.innerHTML = textarea.value;
-    console.log(textarea);
+    resultDesencriptado.textContent = texto2;
+    console.log(texto2);
     });
 
 
