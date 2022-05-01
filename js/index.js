@@ -25,21 +25,18 @@ textoDesencriptable = addEventListener('click', function(){
     });
 
 
-/* function encriptarTexto(textoEncriptable) {
-"e" toString "enter"
-"i" toString "imes"
-"a" toString "ai"
-"o" toString "ober"
-"u" toString "ufat"
-
-
+ function encriptarTexto(textoEncriptable) {
+    str = str.replace(new RegExp("e", "gmi"), "enter");
+    str = str.replace(new RegExp("i", "gmi"), "imes");
+    str = str.replace(new RegExp("a", "gmi"), "ai");
+    str = str.replace(new RegExp("o", "gmi"), "ober");
+    str = str.replace(new RegExp("u", "gmi"), "ufat");
 }
 
 function desencriptarTexto(textoDesencriptable) {
-"enter" toString "e"
-"imes" toString "i"  
-"ai" toString "a"  
-"ober" toString "o" 
-"ufat" toString "u"; 
+    str = str.replace(new RegExp("enter", "gmi"), "e");
+    str = str.replace(new RegExp("imes", "gmi"), "i");
+    str = str.replace(new RegExp("ai", "gmi"), "a");
+    str = str.replace(new RegExp("ober", "gmi"), "o");
+    str = str.replace(new RegExp("ufat", "gmi"), "u");
 }
-*/
