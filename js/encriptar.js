@@ -1,3 +1,13 @@
+function encriptarTexto(string) {
+  
+    string = string.split("e").join("enter");
+    string = string.split("i").join("imes");
+    string = string.split("a").join("ai");
+    string = string.split("o").join("ober");
+    string = string.split("u").join("ufat");
+    return string;
+}
+
 var textoEncriptable = document.querySelector("#boton-encriptar");
 
     textoEncriptable.addEventListener('click', function(){
@@ -5,25 +15,12 @@ var textoEncriptable = document.querySelector("#boton-encriptar");
     var textarea1 = document.querySelector("#texto-cript");
     var resultEncriptado = document.querySelector(".criptreemplazo-texto");
     var texto1 = textarea1.value;
-    resultEncriptado = encriptarTexto(texto1);
-    console.log(resultEncriptado);
-    // texto1.reset();
+    resultEncriptado.textContent = encriptarTexto(texto1);
+    console.log(texto1);
+    texto1.reset();
 });
 
 // function capturarTextarea(textarea) {return texto}
-
-var textoDesencriptable = document.querySelector("#boton-desencriptar");
-
-    textoDesencriptable = addEventListener('click', function(){
-
-    var textarea2 = document.querySelector("#texto-cript");
-    var resultDesencriptado = document.querySelector(".criptreemplazo-texto");
-    var texto2 = textarea2.value;
-    resultDesencriptado = desencriptarTexto(texto2);
-    console.log(resultDesencriptado);
-    // texto2.reset();
-    });
-
 
 /* function encriptarTexto(string) {
     string = string.replaceAll(new RegExp("e", "gmi"), "enter");
@@ -44,20 +41,6 @@ var textoDesencriptable = document.querySelector("#boton-desencriptar");
 }
 */
 
-function encriptarTexto(string) {
-    string = string.split("e").join("enter");
-    string = string.split("i").join("imes");
-    string = string.split("a").join("ai");
-    string = string.split("o").join("ober");
-    string = string.split("u").join("ufat");
-    return;
-}
 
-function desencriptarTexto(string) {
-    string = string.split("enter").join("e");
-    string = string.split("imes").join("i");
-    string = string.split("ai").join("a");
-    string = string.split("ober").join("o");
-    string = string.split("ufat").join("u");
-    return;
-}
+
+
