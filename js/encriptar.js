@@ -19,26 +19,3 @@ var textoEncriptable = document.querySelector("#boton-encriptar");
 });
 
 // function capturarTextarea(textarea) {return texto}
-
-/* function encriptarTexto(string) {
-    string = string.replaceAll(new RegExp("e", "gmi"), "enter");
-    string = string.replaceAll(new RegExp("i", "gmi"), "imes");
-    string = string.replaceAll(new RegExp("a", "gmi"), "ai");
-    string = string.replaceAll(new RegExp("o", "gmi"), "ober");
-    string = string.replaceAll(new RegExp("u", "gmi"), "ufat");
-    return;
-}
-
-// function desencriptarTexto(string) {
-    string = string.replaceAll(new RegExp("enter", "gmi"), "e");
-    string = string.replaceAll(new RegExp("imes", "gmi"), "i");
-    string = string.replaceAll(new RegExp("ai", "gmi"), "a");
-    string = string.replaceAll(new RegExp("ober", "gmi"), "o");
-    string = string.replaceAll(new RegExp("ufat", "gmi"), "u");
-    return;
-}
-*/
-
-
-
-
