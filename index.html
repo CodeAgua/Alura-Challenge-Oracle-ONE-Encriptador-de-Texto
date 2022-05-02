@@ -34,19 +34,26 @@
         </form>
       </section>
 
-      <section class="button-section">
+      <section .flex-container class="button-section">
         <div>
-          <span><img class="img-advertencia" src="img/Advertencia 2x.png" alt="Signo de advertencia">Sólo letras minúsculas y sin acentos</span>
+          <img class="img-advertencia" src="img/Advertencia 2x.png" alt="Signo de advertencia">
+          <span class="texto-advertencia">Sólo letras minúsculas y sin acentos</span>
+        </div>
+
+        <div> 
+
           <button type="button" id="boton-encriptar" class="btn btn-primary">Encriptar</button>
+          
           <button type="button" id="boton-desencriptar" class="btn btn-secondary">Desencriptar</button>
+
         </div>
       </section>
 
       <section class="criptresults-section">
         <div>
-        <img class="munieco" src="img/Muñeco Alura 1x.png" alt="Persona observando un diamante con una lupa">
-        <span class="criptreemplazo-texto">Ningún mensaje fue encontrado
-          
+        <img class="position-absolute top-0 end-0" id="munieco" src="img/Muñeco Alura 1x.png" alt="Persona observando un diamante con una lupa">
+        <span class="container-fluid" id="criptreemplazo-texto">Ningún mensaje fue encontrado
+          -
           Ingresa el texto que deseas encriptar o desencriptar.</span>
         </div>
       </section>

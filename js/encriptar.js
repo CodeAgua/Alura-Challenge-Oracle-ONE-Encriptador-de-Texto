@@ -13,11 +13,9 @@ var textoEncriptable = document.querySelector("#boton-encriptar");
     textoEncriptable.addEventListener('click', function(){
 
     var textarea1 = document.querySelector("#texto-cript");
-    var resultEncriptado = document.querySelector(".criptreemplazo-texto");
+    var resultEncriptado = document.querySelector("#criptreemplazo-texto");
     var texto1 = textarea1.value;
     resultEncriptado.textContent = encriptarTexto(texto1);
-    console.log(texto1);
-    texto1.reset();
 });
 
 // function capturarTextarea(textarea) {return texto}

@@ -10,13 +10,12 @@ function desencriptarTexto(string) {
 
 var textoDesencriptable = document.querySelector("#boton-desencriptar");
 
-    textoDesencriptable = addEventListener('click', function(){
+    textoDesencriptable.addEventListener('click', function(){
 
     var textarea2 = document.querySelector("#texto-cript");
-    var resultDesencriptado = document.querySelector(".criptreemplazo-texto").value;
+    var resultDesencriptado = document.querySelector("#criptreemplazo-texto");
     var texto2 = textarea2.value
     resultDesencriptado.textContent = desencriptarTexto(texto2);
     console.log(texto2);
-    texto2.reset();
     });
 
