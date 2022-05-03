@@ -40,6 +40,12 @@ var textoDesencriptable = document.querySelector("#boton-desencriptar");
     resultDesencriptado.textContent = desencriptarTexto(capturarTextarea(textarea));
     });
 
+    new ClipboardJS(".btn");
+
+    new ClipboardJS('.btn', {
+        container: document.getElementById("texto-cript"),
+      });
+
 var clipboard = new ClipboardJS(".btn");
 
     clipboard.on('success', function(e) {
