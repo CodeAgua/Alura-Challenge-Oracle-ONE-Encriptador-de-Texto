@@ -32,6 +32,11 @@
           <label for="texto-cript" class="label-principal"><h1>Ingrese el texto aquí</h1></label>
           <textarea type="text" id="texto-cript" name="texto-cript" autocomplete="on" autofocus rows="9" cols="20"></textarea>
         </form>
+        <div>
+          <button class="btn" data-clipboard-target="#criptreemplazo-texto">
+            <img class="clippy" src="img/clippy.svg" alt="Copiar al portapapeles">
+          </button>
+        </div>
       </section>
 
       <section .flex-container class="button-section">
@@ -55,17 +60,6 @@
         <span class="container-fluid" id="criptreemplazo-texto">Ningún mensaje fue encontrado
           -
           Ingresa el texto que deseas encriptar o desencriptar.</span>
-        </div>
-        <div>
-          <button class="btn" data-clipboard-target="#texto-cript">
-            <img src="img/clippy.svg" alt="Copiar al portapapeles">
-          </button>
-          <button
-  class="btn"
-  data-clipboard-text="Just because you can doesn't mean you should — clipboard.js"
->
-  Copy to clipboard
-</button>
         </div>
       </section>
     </body>
