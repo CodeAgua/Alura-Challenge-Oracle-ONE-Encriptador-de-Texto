@@ -9,7 +9,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-		<title>Encriptador y desencriptador</title>
+		<title>Encriptador de texto DX</title>
 		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -19,50 +19,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@300&display=swap" rel="stylesheet">  
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-        <header>
-          <div>
-            <img id="logo-alura" src="img/Logo Alura 1x.png" alt="Logo Alura azul">
-          </div>
-        </header>
+        
 	</head>
-
     <body class="texto-cuerpo">
+      <header>
+        <img id="logo-alura" src="img/Logo Alura 1x.png" alt="Logo Alura azul">
+    </header>
+    <main >
       <section class="textarea-section">
         <form>
           <label for="texto-cript" class="label-principal"><h1>Ingrese el texto aquí</h1></label>
-          <textarea type="text" value="" id="texto-cript" name="texto-cript" autocomplete="on" autofocus rows="9" cols="20"></textarea>
+          <textarea type="text" id="texto-cript" name="texto-cript" placeholder="Soy un texto" autocomplete="on" autofocus rows="9" cols="20"></textarea>
+          
+          <div class="button-div">
+            <span class="texto-advertencia">
+              <img class="img-advertencia" src="img/Advertencia 2x.png" alt="Signo de advertencia">
+              Sólo letras minúsculas y sin acentos</span>
+            <button type="button" id="boton-encriptar" class="btn btn-primary">Encriptar</button>
+            
+            <button type="button" id="boton-desencriptar" class="btn btn-secondary">Desencriptar</button>
+          </div>
         </form>
       </section>
 
-      <section .flex-container class="button-section">
-        <div>
-          <img class="img-advertencia" src="img/Advertencia 2x.png" alt="Signo de advertencia">
-          <span class="texto-advertencia">Sólo letras minúsculas y sin acentos</span>
-        </div>
-
-        <div> 
-
-          <button type="button" id="boton-encriptar" class="btn btn-primary">Encriptar</button>
-          
-          <button type="button" id="boton-desencriptar" class="btn btn-secondary">Desencriptar</button>
-
-        </div>
-      </section>
-
       <section class="criptresults-section">
-        <div>
-        <img class="position-absolute top-0 end-0" id="munieco" src="img/Muñeco Alura 1x.png" alt="Persona observando un diamante con una lupa">
-        <span class="container-fluid" id="criptreemplazo-texto">Ningún mensaje fue encontrado
-          -
-          Ingresa el texto que deseas encriptar o desencriptar.</span>
-        </div>
-        <div class="avisocopi">
-          <button class="btn btn-success" onclick="copiarTexto()" onmouseout="textoCopiado()">
+        <img id="munieco" src="img/Muñeco Alura 1x.png" alt="Persona observando un diamante con una lupa">
+        <span id="criptreemplazo-texto">
+          Ningún mensaje fue encontrado - Ingresa el texto que deseas encriptar o desencriptar.</span>
+           <div class="avisocopi">
+          <button id="boton-copiar" class="btn btn-success" onclick="copiarTexto()" onmouseout="textoCopiado()">
             <span class="avisocopi-text" id="miAvisocopi">Copiar al portapapeles</span>
             Copiar texto
             </button>
-          </div>
       </section>
+    </main>
     </body>
     <hr>
     <footer class="footer"><mark><u>Hecho por WaterCode para Alura, 2022 </u></mark></footer>
