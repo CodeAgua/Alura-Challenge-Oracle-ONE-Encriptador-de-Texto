@@ -30,7 +30,7 @@
       <section class="textarea-section">
         <form>
           <label for="texto-cript" class="label-principal"><h1>Ingrese el texto aquí</h1></label>
-          <textarea type="text" id="texto-cript" name="texto-cript" autocomplete="on" autofocus rows="9" cols="20"></textarea>
+          <textarea type="text" value="" id="texto-cript" name="texto-cript" autocomplete="on" autofocus rows="9" cols="20"></textarea>
         </form>
       </section>
 
@@ -56,6 +56,12 @@
           -
           Ingresa el texto que deseas encriptar o desencriptar.</span>
         </div>
+        <div class="avisocopi">
+          <button class="btn btn-success" onclick="copiarTexto()" onmouseout="textoCopiado()">
+            <span class="avisocopi-text" id="miAvisocopi">Copiar al portapapeles</span>
+            Copiar texto
+            </button>
+          </div>
       </section>
     </body>
     <hr>

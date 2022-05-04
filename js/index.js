@@ -39,3 +39,17 @@ var textoDesencriptable = document.querySelector("#boton-desencriptar");
     var resultDesencriptado = document.querySelector("#criptreemplazo-texto");
     resultDesencriptado.textContent = desencriptarTexto(capturarTextarea(textarea));
     });
+
+    function copiarTexto() {
+        var copyText = document.getElementById("criptreemplazo-texto");
+        navigator.clipboard.writeText(copyText.textContent);
+        
+        var tooltip = document.getElementById("miAvisocopi");
+        tooltip.innerHTML = "Copiado: " + copyText.textContent;
+        console.log(copyText.textContent);
+      }
+      
+      function textoCopiado() {
+        var tooltip = document.getElementById("miAvisocopi");
+        tooltip.innerHTML = "Copiar al portapapeles";
+      }
