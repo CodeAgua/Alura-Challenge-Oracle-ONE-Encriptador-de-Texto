@@ -1,5 +1,6 @@
 function encriptarTexto(string) {
     ocultarImagen()
+    ocultarBotón()
     string = string.split("e").join("enter");
     string = string.split("i").join("imes");
     string = string.split("a").join("ai");
@@ -10,6 +11,7 @@ function encriptarTexto(string) {
 
 function desencriptarTexto(string) {
     ocultarImagen()
+    ocultarBotón()
     string = string.split("enter").join("e");
     string = string.split("imes").join("i");
     string = string.split("ai").join("a");
@@ -57,4 +59,9 @@ var textoDesencriptable = document.querySelector("#boton-desencriptar");
       function ocultarImagen() {
         var ocultar = document.getElementById('munieco');
         ocultar.style.display = 'none';
+      }
+
+      function ocultarBotón() {
+        var ocultar = document.getElementById('boton-copiar');
+        ocultar.style.visibility = 'visible';
       }

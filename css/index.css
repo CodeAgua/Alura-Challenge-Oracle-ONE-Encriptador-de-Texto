@@ -8,37 +8,41 @@
 .label-principal {
     font-weight: bold;
     font-size: 21px;
-    margin: 10px;
+    margin: 0.2em;
     padding: 4px;
     text-align: justify;
-    display: inline-flex;
-    position: relative;
+    display: block;
 }
 
 #texto-cript{
     padding: 4px;
-    margin: 10px;
+    margin: 0.2em;
     max-width: 100%;
     line-height: 1.5;
-    border-radius: 3.5px;
+    border-radius: 1em;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
     font-size: 1.3rem;
     letter-spacing: 1px;
-    display: flex;
-    position: inherit;
+    display: block;
 }
 
 #criptreemplazo-texto {
-    font-size: 18px;
-    margin: 1em;
-    text-align: right;
+    margin: 0.2em;
     border: 0.2em;
     border-radius: 1em;
     border-width: 1em;
-    border-color: palevioletred;
-    background-color: blanchedalmond;
-    padding: 1em;
+    padding: 0.6em;
+    max-width: 100%;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    background-color: rgb(235, 180, 97);
+    text-align: center;
+    justify-content: center;
+    display: block;
 }
 
 #boton-encriptar{
@@ -70,27 +74,11 @@
 }
 
 #munieco{
-    width: 400px;
-    margin: 1em;
-    padding: 10px;
+    width: 300px;
+    margin: 0.2em;
+    padding: 8px;
     display: block;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: baseline;
-}
-
-.textarea-section{
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-    justify-content: flex-start;
-}
-
-.criptresults-section{
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-    justify-content: flex-end;
+    position: relative;
 }
 
 .button-div{
@@ -98,26 +86,25 @@
     flex-direction: row;
 }
 
-#boton-copiar{
-    text-align: justify;
-    padding: 1em;
-    margin: 1em;
-    border-width: 0.5em;
-    font-size: large;
-}
-
 .footer {
     font-weight: lighter;
     font-size: 18px;
     text-align: center;
-    padding: 2em;
-    margin: 2em;
+    padding: 1em;
+    margin: 1em;
     display: block;
+}
+
+#boton-copiar{
+    text-align: justify;
+    border-width: 0.5em;
+    font-size: large;
+    visibility: hidden;
 }
 
 .avisocopi {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
   }
   
   .avisocopi .avisocopi-text {
@@ -154,8 +141,8 @@
   }
 
   #logo-alura{
-    padding: 5px;
-    margin: 10px;
+    padding: 4px;
+    margin: 8px;
     align-items: baseline;
     display: inline;
 }
@@ -164,7 +151,7 @@
     h1{
         text-align: center;
     }
-    #logo-alura, .textarea-section, .criptresults-section, .footer{
+    #logo-alura, #munieco, div, .footer{
         width:auto;
     }
 }

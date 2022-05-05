@@ -25,33 +25,46 @@
       <header>
         <img id="logo-alura" src="img/Logo Alura 1x.png" alt="Logo Alura azul">
     </header>
-    <main >
-      <section class="textarea-section">
-        <form>
-          <label for="texto-cript" class="label-principal"><h1>Ingrese el texto aquí</h1></label>
-          <textarea type="text" id="texto-cript" name="texto-cript" placeholder="Soy un texto" autocomplete="on" autofocus rows="9" cols="20"></textarea>
-          
-          <div class="button-div">
-            <span class="texto-advertencia">
-              <img class="img-advertencia" src="img/Advertencia 2x.png" alt="Signo de advertencia">
-              Sólo letras minúsculas y sin acentos</span>
-            <button type="button" id="boton-encriptar" class="btn btn-primary">Encriptar</button>
-            
-            <button type="button" id="boton-desencriptar" class="btn btn-secondary">Desencriptar</button>
-          </div>
-        </form>
-      </section>
+    <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+              <section>
+                <form>
+                  <label for="texto-cript" class="label-principal"><h1>Ingrese el texto aquí</h1></label>
+                  <textarea type="text" id="texto-cript" name="texto-cript" placeholder="Soy un texto" autocomplete="on" autofocus rows="9" cols="20"></textarea>
+                  
+                  <div class="button-div">
+                    <span class="texto-advertencia">
+                      <img class="img-advertencia" src="img/Advertencia 2x.png" alt="Signo de advertencia">
+                      Sólo letras minúsculas y sin acentos</span>
+                    <button type="button" id="boton-encriptar" class="btn btn-primary">Encriptar</button>
+                    
+                    <button type="button" id="boton-desencriptar" class="btn btn-secondary">Desencriptar</button>
+                  </div>
+                </form>
+              </section>
+            </div>
 
-      <section class="criptresults-section">
-        <img id="munieco" src="img/Muñeco Alura 1x.png" alt="Persona observando un diamante con una lupa">
-        <span id="criptreemplazo-texto">
-          Ningún mensaje fue encontrado - Ingresa el texto que deseas encriptar o desencriptar.</span>
-           <div class="avisocopi">
-          <button id="boton-copiar" class="btn btn-success" onclick="copiarTexto()" onmouseout="textoCopiado()">
-            <span class="avisocopi-text" id="miAvisocopi">Copiar al portapapeles</span>
-            Copiar texto
-            </button>
-      </section>
+            <div class="col-4">
+              <section>
+       
+                <img id="munieco" src="img/Muñeco Alura 1x.png" alt="Persona observando un diamante con una lupa">
+                  <div id="criptreemplazo-texto">
+                    Ningún mensaje fue encontrado - Ingresa el texto que deseas encriptar o desencriptar
+                  </div>
+                 <div class="avisocopi">
+                <button id="boton-copiar" class="btn btn-success" onclick="copiarTexto()" onmouseout="textoCopiado()">
+                  <span class="avisocopi-text" id="miAvisocopi">Copiar al portapapeles</span>
+                  Copiar texto
+                  </button>
+                 </div>
+            </section>
+            </div>
+          </div>
+        </div>
+        
+        
     </main>
     </body>
     <hr>
