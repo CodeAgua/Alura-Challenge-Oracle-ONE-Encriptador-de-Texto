@@ -1,6 +1,7 @@
 function encriptarTexto(string) {
     ocultarImagen()
-    ocultarBotón()
+    mostrarTextarea()
+    mostrarBoton()
     string = string.split("e").join("enter");
     string = string.split("i").join("imes");
     string = string.split("a").join("ai");
@@ -11,7 +12,8 @@ function encriptarTexto(string) {
 
 function desencriptarTexto(string) {
     ocultarImagen()
-    ocultarBotón()
+    mostrarTextarea()
+    mostrarBoton()
     string = string.split("enter").join("e");
     string = string.split("imes").join("i");
     string = string.split("ai").join("a");
@@ -31,7 +33,7 @@ var textarea = document.querySelector("#texto-cript");
     textoEncriptable.addEventListener('click', function(){
 
     var resultEncriptado = document.querySelector("#criptreemplazo-texto");
-    resultEncriptado.textContent = encriptarTexto(capturarTextarea(textarea));
+    resultEncriptado.value = encriptarTexto(capturarTextarea(textarea));
 });
 
 var textoDesencriptable = document.querySelector("#boton-desencriptar");
@@ -39,29 +41,34 @@ var textoDesencriptable = document.querySelector("#boton-desencriptar");
     textoDesencriptable.addEventListener('click', function(){
 
     var resultDesencriptado = document.querySelector("#criptreemplazo-texto");
-    resultDesencriptado.textContent = desencriptarTexto(capturarTextarea(textarea));
+    resultDesencriptado.value = desencriptarTexto(capturarTextarea(textarea));
     });
 
     function copiarTexto() {
         var copyText = document.getElementById("criptreemplazo-texto");
-        navigator.clipboard.writeText(copyText.textContent);
+        navigator.clipboard.writeText(copyText.value);
         
         var tooltip = document.getElementById("miAvisocopi");
-        tooltip.innerHTML = "Copiado: " + copyText.textContent;
-        console.log(copyText.textContent);
+        tooltip.textContent = "Copiado: " + copyText.value;
+        console.log(copyText.value);
       }
       
       function textoCopiado() {
         var tooltip = document.getElementById("miAvisocopi");
-        tooltip.innerHTML = "Copiar al portapapeles";
+        tooltip.textContent = "Copiar al portapapeles";
       }
 
       function ocultarImagen() {
-        var ocultar = document.getElementById('munieco');
-        ocultar.style.display = 'none';
+        var ocultar = document.querySelector(".texto-ocultable");
+        ocultar.style.display = "none";
       }
 
-      function ocultarBotón() {
-        var ocultar = document.getElementById('boton-copiar');
-        ocultar.style.visibility = 'visible';
+      function mostrarBoton() {
+        var mostrarBtn = document.getElementById('boton-copiar');
+        mostrarBtn.style.visibility = "visible";
+      }
+
+      function mostrarTextarea() {
+        var mostrarTxt = document.getElementById("criptreemplazo-texto");
+        mostrarTxt.style.visibility = "visible";
       }

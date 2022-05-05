@@ -43,6 +43,7 @@
     text-align: center;
     justify-content: center;
     display: block;
+    visibility: hidden;
 }
 
 #boton-encriptar{
@@ -73,6 +74,24 @@
     font-size: 1.1em;
 }
 
+.texto-ocultable{
+    margin: 0.2em;
+    border: 0.2em;
+    border-radius: 1em;
+    border-width: 1em;
+    padding: 0.6em;
+    max-width: 100%;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    background-color: rgb(235, 180, 97);
+    text-align: center;
+    justify-content: center;
+    display: block;
+}
+
 #munieco{
     width: 300px;
     margin: 0.2em;
@@ -99,6 +118,7 @@
     text-align: justify;
     border-width: 0.5em;
     font-size: large;
+    position: relative;
     visibility: hidden;
 }
 
