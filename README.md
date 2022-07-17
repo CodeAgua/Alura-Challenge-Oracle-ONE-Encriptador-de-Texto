@@ -3,7 +3,8 @@ Un simple encriptador y desencriptador de texto
 
 ## Cómo usar 🚀
 Ingresar al proyecto con este enlace: https://codeagua.github.io/Alura-Challenge-Oracle-ONE-Encriptador-de-Texto/
-Escribir cualquier texto y apretar el botón de encriptar. Para comprobar que funcionar bien apretar el botón de copiar texto y luego intentar desencriptar.
+Escribir cualquier texto y apretar el botón de encriptar. 
+Para comprobar que funciona bien apretar el botón de copiar texto y luego intentar desencriptarlo.
 
 ## Construido con 🛠️
 * HTML
